@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
           <div className="font-sans">
           <h1 className="text-6xl text-white font-bold text-center">Robotics and Motors</h1>
           <p className="text-white text-4xl text-center">сайт в разработке</p>
+          <p className="text-white text-4xl text-center">по вопросам обращайтесь:</p>
+          <Link className='text-[#2b7bb9] hover:text-[#324c80] text-4xl block text-center' href={"mailto:info@robotics-motors.com"}>info@robotics-motors.com</Link>
           </div>
         </div>
        
