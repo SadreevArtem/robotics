@@ -7,15 +7,24 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .container {
+    @apply max-w-full h-full px-4 md:px-6 lg:max-w-[1024px] lg:px-0 xl:max-w-[1360px] xxl:max-w-[100%] mx-auto;
+  }
+  .title {
+    @apply md:text-[20px] font-bold my-2
+  }
 }
