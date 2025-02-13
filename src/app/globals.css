@@ -25,6 +25,9 @@ body {
     @apply max-w-full h-full px-4 md:px-6 lg:max-w-[1024px] lg:px-0 xl:max-w-[1360px] xxl:max-w-[80%] mx-auto;
   }
   .title {
-    @apply md:text-[20px] font-bold my-2
+    @apply md:text-[20px] font-bold my-2;
+  }
+  .header-scroll {
+    @apply !bg-black;
   }
 }

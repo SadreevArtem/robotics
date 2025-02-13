@@ -1,26 +1,39 @@
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
+import { Header } from "@/components/Header/Header";
+import { Orbitron } from "next/font/google";
 
+export const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Настраиваешь веса, которые тебе нужны
+});
 
 export default function Home() {
   return (
     <div className="">
-      <main className="min-h-screen flex items-center bg-cover" style={{ backgroundImage: `url(/bg-main.jpeg)` }}>
-        
-        <div className="container flex justify-between flex-col md:flex-row items-center gap-8">
-          <Image src="/roboticsandmotors.jpeg" alt="Robotics and motors" className="rounded-[20px]"  width={600} height={600} />
-          <div className="font-sans">
-          <h1 className="text-6xl text-white font-bold text-center">Robotics and Motors</h1>
-          <p className="text-white text-4xl text-center">сайт в разработке</p>
-          <p className="text-white text-4xl text-center">по вопросам обращайтесь:</p>
-          <Link className='text-[#2b7bb9] hover:text-[#324c80] text-4xl block text-center' href={"mailto:info@robotics-motors.com"}>info@robotics-motors.com</Link>
-          </div>
+      <Header />
+      <main className="min-h-screen bg-black relative">
+        <div className="absolute top-0 inset-0 bg-[radial-gradient(circle,_rgba(0,102,255,0.6)_10%,_rgba(0,0,0,0)_50%)] opacity-80 blur-2xl z-10 h-[30%] w-[50%] -translate-y-1/2 translate-x-1/2"></div>
+        <video
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  md:w-[75%] h-[75%] object-cover z-0"
+          src="output2.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        ></video>
+        <div className="absolute bottom-0 inset-x-0 bg-[radial-gradient(circle,_rgba(0,102,255,0.6)_65%,_rgba(0,0,0,0)_20%)] opacity-40 blur-2xl z-10 h-[20%] w-[100%] translate-y-1/2"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white w-full text-center">
+          <h2 className="mt-64 text-[56px] font-bold">
+            Revolution of Production - Starts Today.
+          </h2>
+          <p className="text-[34px] opacity-75">
+            Modern Solutions of Your Buisness
+          </p>
         </div>
-       
+        <div className="container flex justify-between flex-col md:flex-row items-center gap-8"></div>
       </main>
-      {/* <footer className="">
-        footer
-      </footer> */}
+      <footer className="">footer</footer>
     </div>
   );
 }
