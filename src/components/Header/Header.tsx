@@ -2,9 +2,9 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { orbitron } from "@/app/page";
 import clsx from "clsx";
 import Link from "next/link";
+import { orbitron } from "@/app/page";
 
 export const Header: React.FC = () => {
   useEffect(() => {
