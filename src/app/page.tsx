@@ -1,13 +1,7 @@
 // import Image from "next/image";
 // import Link from "next/link";
 import { Header } from "@/components/Header/Header";
-import { Orbitron } from "next/font/google";
 import Link from "next/link";
-
-export const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Настраиваешь веса, которые тебе нужны
-});
 
 export default function Home() {
   return (

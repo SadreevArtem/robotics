@@ -4,7 +4,12 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import Link from "next/link";
-import { orbitron } from "@/app/page";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Настраиваешь веса, которые тебе нужны
+});
 
 export const Header: React.FC = () => {
   useEffect(() => {
