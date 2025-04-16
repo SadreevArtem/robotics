@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { AppHead } from "@/components/AppHead/AppHead";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <AppHead title="Robotics and motors" description="" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
