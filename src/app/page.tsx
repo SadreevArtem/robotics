@@ -19,7 +19,7 @@ export default function Home() {
         ></video>
         <video
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  md:w-[75%] h-[75%] object-cover z-0 max-md:hidden"
-          src="/output2.mp4"
+          src="/output6.mp4"
           autoPlay
           muted
           loop
