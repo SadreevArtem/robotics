@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute top-0 inset-0 bg-[radial-gradient(circle,_rgba(0,102,255,0.6)_10%,_rgba(0,0,0,0)_50%)] opacity-80 blur-2xl z-10 h-[30%] w-[50%] -translate-y-1/2 translate-x-1/2"></div>
         <video
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  md:w-[75%] h-[75%] object-cover z-0 md:hidden"
-          src="output3.mp4"
+          src="/compressed.mp4"
           autoPlay
           muted
           loop
@@ -19,7 +19,7 @@ export default function Home() {
         ></video>
         <video
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  md:w-[75%] h-[75%] object-cover z-0 max-md:hidden"
-          src="output2.mp4"
+          src="/output2.mp4"
           autoPlay
           muted
           loop
