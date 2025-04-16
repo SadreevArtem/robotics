@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
       className={`md:p-5 p-4 fixed top-0 z-20 bg-transparent w-full transition-colors duration-500 delay-300  ${orbitron.className}`}
     >
       <div className={"container flex items-center justify-between min-h-6"}>
-        <div className="flex items-center gap-[10px] max-lg:hidden">
+        <div className="max-md:flex items-center gap-[10px] hidden lg:flex">
           <div className="flex gap-4  w-[70px] h-[70px]">
             <Image
               className="object-cover rounded-full"
